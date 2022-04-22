@@ -9,6 +9,9 @@ Description: >
 Globals:
   Function:
     Timeout: 3
+    Tracing: Active
+  Api:
+    TracingEnabled: True
 
 Resources:
   HelloWorldFunction:

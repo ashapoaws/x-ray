@@ -1,4 +1,10 @@
 import json
+import boto3
+from aws_xray_sdk.core import xray_recorder
+from aws_xray_sdk.core import patch_all
+
+# Path boto3 libraries to trace downstream calls (X-Ray)
+patch_all()
 
 # import requests
 
